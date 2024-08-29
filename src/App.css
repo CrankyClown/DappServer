@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  background-image: url('./images/rr.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(31, 31, 31, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #8A2BE2;
+  text-shadow: 0 0 10px #8A2BE2, 0 0 20px #8A2BE2;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.wallet-info {
+  margin-top: 20px;
+}
+
+.wallet-field {
+  border: 1px solid #444;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: rgba(42, 42, 42, 0.8);
+  word-wrap: break-word;
+  color: #00BFFF;
+  font-family: Arial, sans-serif;
+}
+
+.address-entry {
+  border: 2px solid #444;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(42, 42, 42, 0.8);
+  font-family: Arial, sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: rgba(31, 31, 31, 0.9);
+  color: #00BFFF;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #8A2BE2;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #8A2BE2, 0 0 20px #8A2BE2;
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.center-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: red;
+  background-color: rgba(42, 42, 42, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.success-message {
+  color: green;
+  background-color: rgba(42, 42, 42, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
   }
 }
